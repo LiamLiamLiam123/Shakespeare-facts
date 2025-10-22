@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Shakespeare Facts!</title>
+  <meta name="description" content="A simple yet elegant Shakespeare website template with clean visuals and classic design." />
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #f5f2ed;
+      --text: #1d1b16;
+      --accent: #caa93a;
+      --muted: #6b675c;
+      --card: #ffffff;
+      --border: #ddd3b8;
+      --maxw: 1100px;
+    }
+    * { box-sizing: border-box; }
+    html, body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Libre Baskerville', serif;
+      background: var(--bg);
+      color: var(--text);
+    }
+    header {
+      background: var(--card);
+      border-bottom: 1px solid var(--border);
+      padding: 20px 0;
+    }
+    .container {
+      max-width: var(--maxw);
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-family: 'Playfair Display', serif;
+      font-size: 28px;
+      font-weight: 700;
+    }
+    nav {
+      margin-top: 10px;
+    }
+    nav a {
+      color: var(--muted);
+      text-decoration: none;
+      margin-right: 18px;
+      font-weight: 600;
+    }
+    nav a:hover {
+      color: var(--accent);
+    }
+    .hero {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      padding: 60px 0;
+      border-bottom: 1px solid var(--border);
+    }
+    .hero-text {
+      max-width: 550px;
+    }
+    h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 44px;
+      margin: 0 0 12px;
+      color: var(--text);
+    }
+    p.lead {
+      font-size: 18px;
+      color: var(--muted);
+      margin: 0 0 20px;
+    }
+    .hero img {
+      max-width: 400px;
+      border-radius: 10px;
+      border: 2px solid var(--border);
+    }
+    .section {
+      padding: 50px 0;
+      border-bottom: 1px solid var(--border);
+    }
+    h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 32px;
+      margin-bottom: 20px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 20px;
+    }
+    .card h3 {
+      margin-top: 0;
+      color: var(--text);
+      font-family: 'Playfair Display', serif;
+    }
+    .card p {
+      color: var(--muted);
+      font-size: 15px;
+    }
+    footer {
+      padding: 30px 0;
+      text-align: center;
+      font-size: 14px;
+      color: var(--muted);
+    }
+    @media (max-width: 700px) {
+      .hero { flex-direction: column; text-align: center; }
+      .hero img { margin-top: 20px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="logo">Shakespeare</div>
+      <nav>
+        <a href="#plays">Plays</a>
+        <a href="#sonnets">Sonnets</a>
+        <a href="#about">About</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-text">
+        <h1>Discover the Timeless Works of Shakespeare</h1>
+        <p class="lead">Explore the beauty of the Bard’s plays, poems, and sonnets through an elegant and modern layout inspired by the Renaissance aesthetic.</p>
+      </div>
+      <div class="container">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a2/Shakespeare.jpg" alt="William Shakespeare" />
+      </div>
+    </section>
+    <facts>
+        <div class="Fat">
+            <h1>Facts about shakespeare himself!</h1>
+            <h3>1. William Shakespeare was an English playwright, poet, and actor born in 1564 in Stratford-upon-Avon, who died in 1616 which was his 52nd Birthday.</h3>
+            <h3>2. Shakespeare's Darkest play was "Titus Andronicus" about Titus, a general in the Roman army, presents Tamora, Queen of the Goths, as a slave to the new Roman emperor, Saturninus. Saturninus takes her as his wife.</h3>
+            <h3>3. Shakespeare made up words that we stil use to this day, e.g "Swagger" (was made more known due to him and was not made by him.), "In a pickle", "Bedroom", and "Good Riddance" many more words are made by him this is only the tip of the ice berg.</h3>
+            <h3>4. School to this day still regonise him as an important historic character and still learn about him in the U.K and Australia and other place too.</h3>
+            <h3>5. Shakespeare has made lots of plays in his time!</h3>
+        </div>
+    </facts>
+    <section class="section" id="plays">
+      <div class="container">
+        <h2>Some of the plays he made!</h2>
+        <div class="grid">
+          <div class="card">
+            <h3>Hamlet</h3>
+            <p>The tragedy of a prince driven by revenge and madness, questioning the nature of existence itself.</p>
+          </div>
+          <div class="card">
+            <h3>Macbeth</h3>
+            <p>A haunting story of ambition, prophecy, and the consequences of unchecked desire.</p>
+          </div>
+          <div class="card">
+            <h3>Romeo and Juliet</h3>
+            <p>A timeless tale of love and loss, where two young hearts are caught between family and fate.</p>
+          </div>
+          <div class="card">
+            <h3>King Lear</h3>
+            <p>A masterpiece exploring loyalty, betrayal, and the complexities of family and power.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="sonnets">
+      <div class="container">
+        <h2>Famous Sonnets</h2>
+        <div class="card">
+          <h3>Sonnet 18</h3>
+          <p>“Shall I compare thee to a summer’s day? Thou art more lovely and more temperate...”</p>
+        </div>
+        <div class="card">
+          <h3>Sonnet 116</h3>
+          <p>“Let me not to the marriage of true minds admit impediments...”</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="container">
+        <h2>About This Website</h2>
+        <p>This Website was made to help people learn about the Sonnets and Plays of Shakespeare.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">© 2025 Liam Stephenson — Designed by Liam.</div>
+  </footer>
+</body>
+</html>
